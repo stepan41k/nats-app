@@ -1,4 +1,4 @@
-module github.com/stepan41k/GinTest.git
+module github.com/stepan41k/GinTest
 
 go 1.21.1
 
