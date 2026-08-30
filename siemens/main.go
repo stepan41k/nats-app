@@ -30,7 +30,7 @@ func main() {
 
 	var helper gos7.Helper
 	realVal := helper.GetRealAt(buf, 0) // Значение REAL из DB1.DBD0
-	intVal := int16(binary.BigEndian.Uint16(buf[4:6]))    // Значение INT из DB1.DBW4
+	intVal := uint16(binary.BigEndian.Uint16(buf[4:6]))    // Значение INT из DB1.DBW4
 
 	fmt.Printf("Real: %f, Int: %d\n", realVal, intVal)
 }
